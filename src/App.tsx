@@ -1,6 +1,8 @@
 import {
+	Book,
 	Briefcase,
 	Coffee,
+	Coins,
 	Home,
 	Menu as MenuIcon,
 	Music,
@@ -21,6 +23,8 @@ import HomePage from "./pages/Home";
 import JobsPage from "./pages/Jobs";
 import MenuPage from "./pages/Menu";
 import MusicPage from "./pages/Music";
+import SalesReportPage from "./pages/SalesReport";
+import UpdatePricesPage from "./pages/UpdatePrice";
 
 const NavItem = ({ Icon, to, label }) => {
 	const location = useLocation();
@@ -57,6 +61,8 @@ const Layout = ({ children }) => (
 				<NavItem Icon={MenuIcon} to="/menu" label="Menu" />
 				<NavItem Icon={Briefcase} to="/jobs" label="Jobs" />
 				<NavItem Icon={Music} to="/music" label="Music" />
+				<NavItem Icon={Coins} to="/update" label="Update Price" />
+				<NavItem Icon={Book} to="/sales" label="Sales Report" />
 			</nav>
 			<nav className="flex flex-col items-center gap-4 px-2 py-4">
 				<NavItem Icon={Settings} to="/settings" label="Settings" />
@@ -100,6 +106,8 @@ export default function App() {
 					<Route path="/jobs" element={<JobsPage />} />
 					<Route path="/music" element={<MusicPage />} />
 					<Route path="/settings" element={<SettingsPage />} />
+					<Route path="/update" element={<UpdatePricesPage />} />
+					<Route path="/sales" element={<SalesReportPage />} />
 				</Routes>
 			</Layout>
 			<Toaster />
