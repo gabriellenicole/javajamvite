@@ -78,10 +78,10 @@ const Layout = ({ children }) => (
 				</p>
 				<p>
 					<a
-						href="mailto:contact@javajam.com"
+						href="mailto:group14@fg34.com"
 						className="hover:underline"
 					>
-						gabrielle@suharjono.com
+						group14@fg34.com
 					</a>
 				</p>
 			</div>

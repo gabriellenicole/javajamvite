@@ -180,7 +180,6 @@ const MenuPage = () => {
 				image: product.image,
 			}));
 			setProducts(mappedProducts);
-			console.log(mappedProducts);
 		}
 		fetchProducts();
 	}, []);
