@@ -51,7 +51,6 @@ const UpdatePricesPage = () => {
 	};
 
 	const handleSubmit = async () => {
-		console.log("productsData", JSON.stringify(productsData, null, 2));
 		if (
 			productsData.some((product) => product.priceSingle <= 0) ||
 			productsData.some(
